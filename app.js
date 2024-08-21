@@ -1,5 +1,6 @@
 const decimalClock = document.getElementById('decimalClock');
 const binaryClock = document.getElementById('binaryClock');
+const blipperClock = document.getElementById('blipperClock');
 
 function updateDecimalClock() {
 	const now = new Date();
@@ -27,5 +28,18 @@ function updateBinaryClock() {
 	setTimeout(updateBinaryClock, 1000);
 }
 
+function updateBlipperBinaryClock() {
+	const now = new Date();
+	const seconds = now.getSeconds().toString(2).padStart(6, '0');
+
+	// console.log(typeof seconds);
+	const blipperReadout = seconds.charAt(5);
+
+	blipperClock.innerText = blipperReadout;
+
+	setTimeout(updateBlipperBinaryClock, 1000);
+}
+
 updateDecimalClock();
 updateBinaryClock();
+updateBlipperBinaryClock();

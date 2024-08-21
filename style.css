@@ -25,3 +25,14 @@ body {
 	font-size: 34px;
 	/* transform: 'scale(0, 200px)'; */
 }
+
+#blipperClock {
+	background-color: black;
+	border: rgb(62, 62, 118) solid 4px;
+	border-radius: 30px 30px 30px 30px;
+
+	color: rgb(101, 97, 97);
+	text-align: center;
+	font-size: 24px;
+	width: 75px;
+}
