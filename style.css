@@ -15,8 +15,8 @@ body {
 
 #binaryClock {
 	padding: 10px;
-	border: green solid 4px;
-	border-radius: 0px 30px 30px 30px;
+	border: red solid 4px;
+	border-radius: 0px 60px 30px 60px;
 	background-color: black;
 	width: 450px;
 	font-family: 'Courier New', Courier, monospace;
