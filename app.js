@@ -1,6 +1,18 @@
 const decimalClock = document.getElementById('decimalClock');
 const binaryClock = document.getElementById('binaryClock');
 const blipperClock = document.getElementById('blipperClock');
+const blipperH6 = document.getElementById('blipperH32');
+const blipperH5 = document.getElementById('blipperH16');
+const blipperH4 = document.getElementById('blipperH8');
+const blipperH3 = document.getElementById('blipperH4');
+const blipperH2 = document.getElementById('blipperH2');
+const blipperH1 = document.getElementById('blipperH1');
+const blipperM6 = document.getElementById('blipperM32');
+const blipperM5 = document.getElementById('blipperM16');
+const blipperM4 = document.getElementById('blipperM8');
+const blipperM3 = document.getElementById('blipperM4');
+const blipperM2 = document.getElementById('blipperM2');
+const blipperM1 = document.getElementById('blipperM1');
 
 function updateDecimalClock() {
 	const now = new Date();
