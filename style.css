@@ -29,7 +29,12 @@ body {
 	background-color: grey;
 	margin-top: 72px;
 	display: flex;
-	
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	width: 500px;
+	border: solid 5px darkgrey;
+	border-radius: 70px;
 
 }
 
@@ -41,7 +46,7 @@ body {
 	text-align: center;
 	font-size: 14px;
 	width: 13px;
-	height: 72px;
+	height: 100px;
 }
 
 .blipperOn {
@@ -60,10 +65,10 @@ body {
 
 #blipperMinute {
 	display: flex;
-	margin-left: 20px;
+	/* margin-left: 20px; */
 }
 
 #blipperSecond {
 	display: flex;
-	margin-left: 20px;
+	/* margin-left: 20px; */
 }
