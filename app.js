@@ -14,7 +14,7 @@ const blipperM4 = document.getElementById('blipperM4');
 const blipperM2 = document.getElementById('blipperM2');
 const blipperM1 = document.getElementById('blipperM1');
 const blipperS32 = document.getElementById('blipperS32');
-const blipperS18 = document.getElementById('blipperS16');
+const blipperS16 = document.getElementById('blipperS16');
 const blipperS8 = document.getElementById('blipperS8');
 const blipperS4 = document.getElementById('blipperS4');
 const blipperS2 = document.getElementById('blipperS2');
@@ -52,17 +52,30 @@ function updateBlipperBinaryClock() {
 
 	const blipperReadoutS1 = seconds.charAt(5);
 	const blipperReadoutS2 = seconds.charAt(4);
-	const blipperReadoutS4 = seconds.charAt(5);
-	const blipperReadoutS8 = seconds.charAt(4);
-	const blipperReadoutS16 = seconds.charAt(5);
-	const blipperReadoutS32 = seconds.charAt(4);
+	const blipperReadoutS4 = seconds.charAt(3);
+	const blipperReadoutS8 = seconds.charAt(2);
+	const blipperReadoutS16 = seconds.charAt(1);
+	const blipperReadoutS32 = seconds.charAt(0);
 
-	blipperS1.innerText = blipperReadoutS1;
-	blipperS2.innerText = blipperReadoutS2;
-	blipperS4.innerText = blipperReadoutS1;
-	blipperS8.innerText = blipperReadoutS2;
-	blipperS16.innerText = blipperReadoutS1;
-	blipperS32.innerText = blipperReadoutS2;
+	blipperS1.className =
+		blipperReadoutS1 == '1' ? 'blipperOn blips' : 'blipperOff blips';
+	blipperS2.className =
+		blipperReadoutS2 == '1' ? 'blipperOn blips' : 'blipperOff blips';
+	blipperS4.className =
+		blipperReadoutS4 == '1' ? 'blipperOn blips' : 'blipperOff blips';
+	blipperS8.className =
+		blipperReadoutS8 == '1' ? 'blipperOn blips' : 'blipperOff blips';
+	blipperS16.className =
+		blipperReadoutS16 == '1' ? 'blipperOn blips' : 'blipperOff blips';
+	blipperS32.className =
+		blipperReadoutS32 == '1' ? 'blipperOn blips' : 'blipperOff blips';
+
+	// blipperS1.innerText = blipperReadoutS1;
+	// blipperS2.innerText = blipperReadoutS2;
+	// blipperS4.innerText = blipperReadoutS4;
+	// blipperS8.innerText = blipperReadoutS8;
+	// blipperS16.innerText = blipperReadoutS16;
+	// blipperS32.innerText = blipperReadoutS32;
 
 	setTimeout(updateBlipperBinaryClock, 1000);
 }
