@@ -38,6 +38,7 @@ body {
 	font-size: 24px;
 	width: 75px;
 	height: 75px; */
+	display: flex;
 }
 
 .blips {
@@ -62,9 +63,11 @@ body {
 }
 
 #blipperHour {
+	display: flex;
 }
 
 #blipperMinute {
+	display: flex;
 }
 
 #blipperSecond {
