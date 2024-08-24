@@ -13,6 +13,12 @@ const blipperM4 = document.getElementById('blipperM8');
 const blipperM3 = document.getElementById('blipperM4');
 const blipperM2 = document.getElementById('blipperM2');
 const blipperM1 = document.getElementById('blipperM1');
+const blipperS6 = document.getElementById('blipperS32');
+const blipperS5 = document.getElementById('blipperS16');
+const blipperS4 = document.getElementById('blipperS8');
+const blipperS3 = document.getElementById('blipperS4');
+const blipperS2 = document.getElementById('blipperS2');
+const blipperS1 = document.getElementById('blipperS1');
 
 function updateDecimalClock() {
 	const now = new Date();
@@ -44,10 +50,11 @@ function updateBlipperBinaryClock() {
 	const now = new Date();
 	const seconds = now.getSeconds().toString(2).padStart(6, '0');
 
-	// console.log(typeof seconds);
-	const blipperReadout = seconds.charAt(5);
+	const blipperReadoutS1 = seconds.charAt(5);
+	const blipperReadoutS2 = seconds.charAt(4);
 
-	blipperClock.innerText = blipperReadout;
+	blipperS1.innerText = blipperReadoutS1;
+	blipperS2.innerText = blipperReadoutS2;
 
 	setTimeout(updateBlipperBinaryClock, 1000);
 }
