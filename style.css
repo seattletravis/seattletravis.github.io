@@ -26,8 +26,11 @@ body {
 }
 
 #blipperClock {
+	background-color: grey;
 	margin-top: 72px;
 	display: flex;
+	
+
 }
 
 .blips {
