@@ -23,21 +23,10 @@ body {
 	text-align: center;
 	color: green;
 	font-size: 34px;
-	/* transform: 'scale(0, 200px)'; */
 }
 
 #blipperClock {
-	/* display: flex; */
-	/* margin-top: 30px;
-	background-color: black;
-	border: rgb(62, 62, 118) solid 4px;
-	border-radius: 30px 30px 30px 30px;
-
-	color: rgb(101, 97, 97);
-	text-align: center;
-	font-size: 24px;
-	width: 75px;
-	height: 75px; */
+	margin-top: 72px;
 	display: flex;
 }
 
@@ -48,8 +37,8 @@ body {
 	color: rgb(222, 213, 213);
 	text-align: center;
 	font-size: 14px;
-	width: 26px;
-	height: 26px;
+	width: 13px;
+	height: 72px;
 }
 
 .blipperOn {
