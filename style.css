@@ -27,7 +27,8 @@ body {
 }
 
 #blipperClock {
-	margin-top: 30px;
+	/* display: flex; */
+	/* margin-top: 30px;
 	background-color: black;
 	border: rgb(62, 62, 118) solid 4px;
 	border-radius: 30px 30px 30px 30px;
@@ -36,7 +37,7 @@ body {
 	text-align: center;
 	font-size: 24px;
 	width: 75px;
-	height: 75px;
+	height: 75px; */
 }
 
 .blipperOn {
@@ -47,7 +48,7 @@ body {
 	background-color: green;
 }
 
-#blipperS1 {
+.blips {
 	background-color: black;
 	border: rgb(155, 40, 44) solid 4px;
 	border-radius: 30px 30px 30px 30px;
@@ -63,4 +64,5 @@ body {
 }
 
 #blipperSecond {
+	display: flex;
 }
