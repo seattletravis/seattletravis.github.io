@@ -1,8 +1,7 @@
 const decimalClock = document.getElementById("decimalClock");
 const binaryClock = document.getElementById("binaryClock");
 const blipperClock = document.getElementById("blipperClock");
-const blipperH32 = document.getElementById("blipperH32");
-const blipperH16 = document.getElementById("blipperH16");
+
 const blipperH8 = document.getElementById("blipperH8");
 const blipperH4 = document.getElementById("blipperH4");
 const blipperH2 = document.getElementById("blipperH2");
@@ -48,8 +47,14 @@ function updateBinaryClock() {
 
 function updateBlipperBinaryClock() {
   const now = new Date();
+  const hours = now.getHours().toString(2).padStart(4, "0");
   const minutes = now.getMinutes().toString(2).padStart(6, "0");
   const seconds = now.getSeconds().toString(2).padStart(6, "0");
+
+  const blipperReadoutH1 = hours.charAt(3);
+  const blipperReadoutH2 = hours.charAt(2);
+  const blipperReadoutH4 = hours.charAt(1);
+  const blipperReadoutH8 = hours.charAt(0);
 
   const blipperReadoutM1 = minutes.charAt(5);
   const blipperReadoutM2 = minutes.charAt(4);
@@ -64,6 +69,15 @@ function updateBlipperBinaryClock() {
   const blipperReadoutS8 = seconds.charAt(2);
   const blipperReadoutS16 = seconds.charAt(1);
   const blipperReadoutS32 = seconds.charAt(0);
+
+  blipperH1.className =
+    blipperReadoutH1 == "1" ? "blipperOn blips" : "blipperOff blips";
+  blipperH2.className =
+    blipperReadoutH2 == "1" ? "blipperOn blips" : "blipperOff blips";
+  blipperH4.className =
+    blipperReadoutH4 == "1" ? "blipperOn blips" : "blipperOff blips";
+  blipperH8.className =
+    blipperReadoutH8 == "1" ? "blipperOn blips" : "blipperOff blips";
 
   blipperM1.className =
     blipperReadoutM1 == "1" ? "blipperOn blips" : "blipperOff blips";
