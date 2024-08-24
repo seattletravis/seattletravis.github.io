@@ -1,22 +1,22 @@
 const decimalClock = document.getElementById('decimalClock');
 const binaryClock = document.getElementById('binaryClock');
 const blipperClock = document.getElementById('blipperClock');
-const blipperH6 = document.getElementById('blipperH32');
-const blipperH5 = document.getElementById('blipperH16');
-const blipperH4 = document.getElementById('blipperH8');
-const blipperH3 = document.getElementById('blipperH4');
+const blipperH32 = document.getElementById('blipperH32');
+const blipperH16 = document.getElementById('blipperH16');
+const blipperH8 = document.getElementById('blipperH8');
+const blipperH4 = document.getElementById('blipperH4');
 const blipperH2 = document.getElementById('blipperH2');
 const blipperH1 = document.getElementById('blipperH1');
-const blipperM6 = document.getElementById('blipperM32');
-const blipperM5 = document.getElementById('blipperM16');
-const blipperM4 = document.getElementById('blipperM8');
-const blipperM3 = document.getElementById('blipperM4');
+const blipperM32 = document.getElementById('blipperM32');
+const blipperM16 = document.getElementById('blipperM16');
+const blipperM8 = document.getElementById('blipperM8');
+const blipperM4 = document.getElementById('blipperM4');
 const blipperM2 = document.getElementById('blipperM2');
 const blipperM1 = document.getElementById('blipperM1');
-const blipperS6 = document.getElementById('blipperS32');
-const blipperS5 = document.getElementById('blipperS16');
-const blipperS4 = document.getElementById('blipperS8');
-const blipperS3 = document.getElementById('blipperS4');
+const blipperS32 = document.getElementById('blipperS32');
+const blipperS18 = document.getElementById('blipperS16');
+const blipperS8 = document.getElementById('blipperS8');
+const blipperS4 = document.getElementById('blipperS4');
 const blipperS2 = document.getElementById('blipperS2');
 const blipperS1 = document.getElementById('blipperS1');
 
@@ -52,9 +52,17 @@ function updateBlipperBinaryClock() {
 
 	const blipperReadoutS1 = seconds.charAt(5);
 	const blipperReadoutS2 = seconds.charAt(4);
+	const blipperReadoutS4 = seconds.charAt(5);
+	const blipperReadoutS8 = seconds.charAt(4);
+	const blipperReadoutS16 = seconds.charAt(5);
+	const blipperReadoutS32 = seconds.charAt(4);
 
 	blipperS1.innerText = blipperReadoutS1;
 	blipperS2.innerText = blipperReadoutS2;
+	blipperS4.innerText = blipperReadoutS1;
+	blipperS8.innerText = blipperReadoutS2;
+	blipperS16.innerText = blipperReadoutS1;
+	blipperS32.innerText = blipperReadoutS2;
 
 	setTimeout(updateBlipperBinaryClock, 1000);
 }
