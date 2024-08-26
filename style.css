@@ -35,7 +35,6 @@ body {
 	width: 500px;
 	border: solid 5px darkgrey;
 	border-radius: 70px;
-
 }
 
 .blips {
@@ -52,7 +51,6 @@ body {
 .blipperOn {
 	background-color: green;
 	border-color: darkgreen;
-
 }
 
 .blipperOff {
@@ -70,4 +68,12 @@ body {
 
 #blipperSecond {
 	display: flex;
+}
+
+#displayVBlip {
+	margin-top: 50px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: Blue;
+	width: 200;
+	border: solid red 3px;
 }

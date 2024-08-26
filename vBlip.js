@@ -1,4 +1,5 @@
 console.log('vBlipn is Online');
+const displayVBlip = document.getElementById('displayVBlip');
 
 const blipDecimalHour10BinaryHour8 = document.getElementById('blipD10BH8');
 
@@ -18,13 +19,9 @@ function updateVerticalBlipClock() {
 	const binarySec10 = decimalSec10.toString(2).padStart(3, '0');
 	const binarySec1 = decimalSec1.toString(2).padStart(4, '0');
 
-	const readout = `${binaryHr10}`;
+	const readout = `${binaryHr10} ${binaryHr1} : ${binaryMin10} ${binaryMin1} : ${binarySec10} ${binarySec1}`;
 
-	console.log(readout);
-
-	// console.log(decimalSec10);
-
-	// console.log(decimalSec1);
+	displayVBlip.innerText = readout;
 
 	setTimeout(updateVerticalBlipClock, 1000);
 }
