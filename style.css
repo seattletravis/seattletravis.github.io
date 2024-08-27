@@ -79,13 +79,21 @@ body {
 
 #vBlipClock {
 	display: flex;
+	justify-content: center;
+	align-items: baseline;
 	border: solid red 10px;
+	border-radius: 30px;
 	width: 300px;
 }
 
 .vBlipContainer {
 	position: relative;
-	border: purple solid 5px;
+}
+
+.vBlipSeperator {
+	align-self: center;
+	font-size: 50px;
+	color: grey;
 }
 
 .vBlips {
