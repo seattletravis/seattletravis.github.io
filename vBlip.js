@@ -1,6 +1,12 @@
 console.log('vBlip is Online');
 const displayVBlip = document.getElementById('displayVBlip');
 const vBlipHr10_4 = document.getElementById('vBlipHr10_4');
+const vBlipHr10_2 = document.getElementById('vBlipHr10_2');
+const vBlipHr10_1 = document.getElementById('vBlipHr10_1');
+const vBlipHr1_8 = document.getElementById('vBlipHr1_8');
+const vBlipHr1_4 = document.getElementById('vBlipHr1_4');
+const vBlipHr1_2 = document.getElementById('vBlipHr1_2');
+const vBlipHr1_1 = document.getElementById('vBlipHr1_1');
 
 function updateVerticalBlipClock() {
 	const now = new Date();
@@ -44,6 +50,10 @@ function updateVerticalBlipClock() {
 	vBlipHr10_4.className = Hr10_4 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
 	vBlipHr10_2.className = Hr10_2 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
 	vBlipHr10_1.className = Hr10_1 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipHr1_8.className = Hr1_8 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipHr1_4.className = Hr1_4 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipHr1_2.className = Hr1_2 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipHr1_1.className = Hr1_1 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
 
 	const readout = `${binaryHr10} ${binaryHr1} : ${binaryMin10} ${binaryMin1} : ${binarySec10} ${binarySec1}`;
 
