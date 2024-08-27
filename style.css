@@ -75,5 +75,11 @@ body {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	color: Blue;
 	width: 200;
-	border: solid red 3px;
+}
+
+#vBlipClock {
+	display: flex;
+}
+
+.vBlipOn {
 }
