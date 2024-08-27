@@ -79,10 +79,13 @@ body {
 
 #vBlipClock {
 	display: flex;
+	border: solid red 10px;
+	width: 300px;
 }
 
 .vBlipContainer {
 	position: relative;
+	border: purple solid 5px;
 }
 
 .vBlips {
@@ -93,7 +96,7 @@ body {
 	text-align: center;
 	font-size: 14px;
 	width: 13px;
-	height: 10px;
+	height: 13px;
 	padding: 3px;
 	margin: 3px;
 }
