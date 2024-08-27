@@ -1,7 +1,6 @@
-console.log('vBlipn is Online');
+console.log('vBlip is Online');
 const displayVBlip = document.getElementById('displayVBlip');
-
-const blipDecimalHour10BinaryHour8 = document.getElementById('blipD10BH8');
+const vBlipHr10_4 = document.getElementById('vBlipHr10_4');
 
 function updateVerticalBlipClock() {
 	const now = new Date();
@@ -42,12 +41,9 @@ function updateVerticalBlipClock() {
 	const Sec1_2 = binarySec1.charAt(1);
 	const Sec1_1 = binarySec1.charAt(0);
 
-	vBlipHr10_4.className =
-		Hr10_4 == '1' ? 'blipperOn blips' : 'blipperOff blips';
-	vBlipHr10_2.className =
-		Hr10_2 == '1' ? 'blipperOn blips' : 'blipperOff blips';
-	vBlipHr10_1.className =
-		Hr10_1 == '1' ? 'blipperOn blips' : 'blipperOff blips';
+	vBlipHr10_4.className = Hr10_4 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipHr10_2.className = Hr10_2 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipHr10_1.className = Hr10_1 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
 
 	const readout = `${binaryHr10} ${binaryHr1} : ${binaryMin10} ${binaryMin1} : ${binarySec10} ${binarySec1}`;
 

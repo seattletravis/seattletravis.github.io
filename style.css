@@ -81,5 +81,23 @@ body {
 	display: flex;
 }
 
+.vBlips {
+	/* background-color: black; */
+	border: rgb(155, 40, 44) solid 4px;
+	border-radius: 30px 30px 30px 30px;
+	color: rgb(222, 213, 213);
+	text-align: center;
+	font-size: 14px;
+	width: 13px;
+	height: 10px;
+}
+
 .vBlipOn {
+	background-color: green;
+	border-color: darkgreen;
+}
+
+.vBlipOff {
+	background-color: lightblue;
+	border-color: lightblue;
 }
