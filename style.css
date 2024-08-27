@@ -79,7 +79,6 @@ body {
 
 #vBlipClock {
 	display: flex;
-	position: relative;
 }
 
 .vBlipContainer {
