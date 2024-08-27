@@ -81,7 +81,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
-	border: solid red 10px;
+	border: solid blue 10px;
 	border-radius: 30px;
 	width: 300px;
 }
