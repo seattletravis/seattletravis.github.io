@@ -7,6 +7,13 @@ const vBlipHr1_8 = document.getElementById('vBlipHr1_8');
 const vBlipHr1_4 = document.getElementById('vBlipHr1_4');
 const vBlipHr1_2 = document.getElementById('vBlipHr1_2');
 const vBlipHr1_1 = document.getElementById('vBlipHr1_1');
+const vBlipMin10_4 = document.getElementById('vBlipMin10_4');
+const vBlipMin10_2 = document.getElementById('vBlipMin10_2');
+const vBlipMin10_1 = document.getElementById('vBlipMin10_1');
+const vBlipMin1_8 = document.getElementById('vBlipMin1_8');
+const vBlipMin1_4 = document.getElementById('vBlipMin1_4');
+const vBlipMin1_2 = document.getElementById('vBlipMin1_2');
+const vBlipMin1_1 = document.getElementById('vBlipMin1_1');
 
 function updateVerticalBlipClock() {
 	const now = new Date();
@@ -54,6 +61,28 @@ function updateVerticalBlipClock() {
 	vBlipHr1_4.className = Hr1_4 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
 	vBlipHr1_2.className = Hr1_2 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
 	vBlipHr1_1.className = Hr1_1 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+
+	vBlipMin10_4.className =
+		Min10_4 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipMin10_2.className =
+		Min10_2 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipMin10_1.className =
+		Min10_1 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipMin1_8.className = Min1_8 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipMin1_4.className = Min1_4 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipMin1_2.className = Min1_2 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipMin1_1.className = Min1_1 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+
+	vBlipSec10_4.className =
+		Sec10_4 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipSec10_2.className =
+		Sec10_2 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipSec10_1.className =
+		Sec10_1 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipSec1_8.className = Sec1_8 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipSec1_4.className = Sec1_4 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipSec1_2.className = Sec1_2 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
+	vBlipSec1_1.className = Sec1_1 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
 
 	const readout = `${binaryHr10} ${binaryHr1} : ${binaryMin10} ${binaryMin1} : ${binarySec10} ${binarySec1}`;
 
