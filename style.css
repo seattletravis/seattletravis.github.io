@@ -70,11 +70,19 @@ body {
 	display: flex;
 }
 
-#displayVBlip {
+#iobinaryClock {
 	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	border: 3px red solid;
+	border-radius: 25px;
+}
+
+#displayVBlip {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	color: Blue;
-	width: 200;
 }
 
 #vBlipClock {
