@@ -92,7 +92,7 @@ body {
 	justify-content: center;
 	align-items: baseline;
 	border: solid blue 10px;
-	border-radius: 30px;
+	border-radius: 40px;
 	width: 225px;
 	height: 225px;
 	background-color: grey;
@@ -105,7 +105,7 @@ body {
 .vBlipSeperator {
 	align-self: center;
 	font-size: 50px;
-	color: grey;
+	color: black;
 }
 
 .vBlips {
