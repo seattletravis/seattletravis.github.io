@@ -21,7 +21,7 @@ body {
 	color: rgb(101, 97, 97);
 	text-align: center;
 	font-size: 2vw;
-	width: 15vw;
+	width: 35vw;
 	/* width: 150px; */
 	/* margin-left: 10vw; */
 }
@@ -35,8 +35,9 @@ body {
 	font-family: 'Courier New', Courier, monospace;
 	text-align: center;
 	color: green;
-	font-size: 2.5vw;
-	width: 50vw;
+	font-size: 4vw;
+
+	width: 65vw;
 	/* width: 450px; */
 	/* margin-left: 10vw; */
 }
