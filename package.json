@@ -1,15 +1,16 @@
 {
-  "name": "seattletravis.github.io",
-  "version": "1.0.0",
-  "description": "binary clock design project",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "seattletravis.github.io"
-  },
-  "author": "Travis Lamberte",
-  "license": "ISC"
+	"name": "seattletravis.github.io",
+	"version": "1.0.0",
+	"description": "binary clock design project",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "seattletravis.github.io"
+	},
+	"author": "Travis Lamberte",
+	"license": "ISC",
+	"type": "module"
 }

@@ -1,4 +1,3 @@
-console.log('vBlip is Online');
 const displayVBlip = document.getElementById('displayVBlip');
 const vBlipHr10_4 = document.getElementById('vBlipHr10_4');
 const vBlipHr10_2 = document.getElementById('vBlipHr10_2');
