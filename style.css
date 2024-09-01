@@ -92,6 +92,7 @@ body {
 }
 
 #vBlipClock {
+	margin-left: 40vw;
 	margin-top: 50px;
 	display: flex;
 	justify-content: center;
@@ -105,6 +106,7 @@ body {
 
 .vBlipContainer {
 	position: relative;
+	margin-left: 2vw;
 }
 
 .vBlipSeperator {
