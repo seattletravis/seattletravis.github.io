@@ -40,3 +40,13 @@
 	background-color: lightblue;
 	border-color: lightblue;
 }
+
+.blipsCircle {
+	border-radius: 30px 30px 30px 30px;
+	color: rgb(222, 213, 213);
+	text-align: center;
+	font-size: 14px;
+	width: 10px;
+	height: 100px;
+	margin: 0px 4px 0px 4px;
+}

@@ -13,23 +13,18 @@ const blipCircleMin1_4 = document.getElementById('blipCircleMin1_4');
 const blipCircleMin1_2 = document.getElementById('blipCircleMin1_2');
 const blipCircleMin1_1 = document.getElementById('blipCircleMin1_1');
 
-function updateVerticalBlipClock() {
+function updateBlipCircleClock() {
 	const now = new Date();
 	const decimalHr10 = Math.floor(now.getHours() / 10);
 	const decimalHr1 = now.getHours() % 10;
 	const decimalMin10 = Math.floor(now.getMinutes() / 10);
 	const decimalMin1 = now.getMinutes() % 10;
-	const decimalSec10 = Math.floor(now.getSeconds() / 10);
-	const decimalSec1 = now.getSeconds() % 10;
 
 	const binaryCircleHr10 = decimalHr10.toString(2).padStart(3, '0');
 	const binaryCircleHr1 = decimalHr1.toString(2).padStart(4, '0');
 	const binaryCircleMin10 = decimalMin10.toString(2).padStart(3, '0');
 	const binaryCircleMin1 = decimalMin1.toString(2).padStart(4, '0');
-	const binaryCircleSec10 = decimalSec10.toString(2).padStart(3, '0');
-	const binaryCircleSec1 = decimalSec1.toString(2).padStart(4, '0');
 
-	// Name format is Unit Hr/Min/Sec followed by base 10 followed by base 2 example Hr10_4
 	const Hr10_4 = binaryCircleHr10.charAt(2);
 	const Hr10_2 = binaryCircleHr10.charAt(1);
 	const Hr10_1 = binaryCircleHr10.charAt(0);
@@ -60,28 +55,22 @@ function updateVerticalBlipClock() {
 	blipCircleHr1_1.className =
 		Hr1_1 == '1' ? 'blipCircleOn blipsCircle' : 'blipCircleOff blipsCircle';
 
-	blipMin10_4.className =
-		MinCircle10_4 == '1'
-			? 'blipCircleOn blipsCircle'
-			: 'blipCircleOff blipsCircle';
-	blipMin10_2.className =
-		MinCircle10_2 == '1'
-			? 'blipCircleOn blipsCircle'
-			: 'blipCircleOff blipsCircle';
-	blipMin10_1.className =
-		MinCircle10_1 == '1'
-			? 'blipCircleOn blipsCircle'
-			: 'blipCircleOff blipsCircle';
+	blipCircleMin10_4.className =
+		Min10_4 == '1' ? 'blipCircleOn blipsCircle' : 'blipCircleOff blipsCircle';
+	blipCircleMin10_2.className =
+		Min10_2 == '1' ? 'blipCircleOn blipsCircle' : 'blipCircleOff blipsCircle';
+	blipCircleMin10_1.className =
+		Min10_1 == '1' ? 'blipCircleOn blipsCircle' : 'blipCircleOff blipsCircle';
 	blipCircleMin1_8.className =
-		Min1_8 == '1' ? 'blipCircleOn blipsCircle' : 'blipCircleOff blips';
+		Min1_8 == '1' ? 'blipCircleOn blipsCircle' : 'blipCircleOff blipsCircle';
 	blipCircleMin1_4.className =
-		Min1_4 == '1' ? 'blipCircleOn blipsCircle' : 'blipCircleOff blips';
+		Min1_4 == '1' ? 'blipCircleOn blipsCircle' : 'blipCircleOff blipsCircle';
 	blipCircleMin1_2.className =
-		Min1_2 == '1' ? 'blipCircleOn blipsCircle' : 'blipCircleOff blips';
+		Min1_2 == '1' ? 'blipCircleOn blipsCircle' : 'blipCircleOff blipsCircle';
 	blipCircleMin1_1.className =
 		Min1_1 == '1' ? 'blipCircleOn blipsCircle' : 'blipCircleOff blipsCircle';
 
-	setTimeout(updateVerticalBlipClock, 1000);
+	setTimeout(updateBlipCircleClock, 1000);
 }
 
 updateVerticalBlipClock();
