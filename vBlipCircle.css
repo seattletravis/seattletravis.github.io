@@ -2,11 +2,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
-	border: solid blue 10px;
+	border: solid red 10px;
 	border-radius: 50%;
 	width: 165px;
 	height: 165px;
-	background-color: grey;
+	background-color: orange;
 }
 
 .blipCircleContainers {
@@ -31,12 +31,12 @@
 	margin: 5px 5px 4px 3px;
 }
 
-.vCircleBlipOn {
+.blipCircleOn {
 	background-color: darkblue;
 	border-color: darkblue;
 }
 
-.vCircleBlipOff {
+.blipCircleOff {
 	background-color: lightblue;
 	border-color: lightblue;
 }

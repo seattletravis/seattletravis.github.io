@@ -73,4 +73,4 @@ function updateBlipCircleClock() {
 	setTimeout(updateBlipCircleClock, 1000);
 }
 
-updateVerticalBlipClock();
+updateBlipCircleClock();
