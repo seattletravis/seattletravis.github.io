@@ -28,7 +28,7 @@ body {
 	color: green;
 	font-size: 4vw;
 
-	width: 65vw;
+	width: 350px;
 }
 
 #blipperClock {
@@ -38,29 +38,27 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
-	width: 500px;
+	width: 350px;
 	border: solid 5px darkgrey;
 	border-radius: 70px;
 }
 
 .blips {
-	border: rgb(155, 40, 44) solid 4px;
 	border-radius: 30px 30px 30px 30px;
 	color: rgb(222, 213, 213);
 	text-align: center;
 	font-size: 14px;
-	width: 13px;
+	width: 10px;
 	height: 100px;
+	margin: 0px 1px 0px 1px;
 }
 
 .blipperOn {
 	background-color: green;
-	border-color: darkgreen;
 }
 
 .blipperOff {
 	background-color: lightblue;
-	border-color: lightblue;
 }
 
 #blipperHour {
@@ -76,12 +74,10 @@ body {
 }
 
 #ioBinaryClock {
-	/* margin-top: 50px; */
-
+	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: auto;
 	height: 50px;
 	width: 350px;
 	border: 5px red solid;
@@ -97,15 +93,15 @@ body {
 }
 
 #vBlipClock {
-	margin-left: 40vw;
+	/* margin-left: 40vw; */
 	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
 	border: solid blue 10px;
 	border-radius: 40px;
-	width: 225px;
-	height: 225px;
+	width: 350px;
+	height: 350px;
 	background-color: grey;
 }
 
