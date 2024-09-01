@@ -83,7 +83,7 @@ function updateVerticalBlipClock() {
 	vBlipSec1_2.className = Sec1_2 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
 	vBlipSec1_1.className = Sec1_1 == '1' ? 'vBlipOn vBlips' : 'vBlipOff vBlips';
 
-	const readout = `${binaryHr10} ${binaryHr1} : ${binaryMin10} ${binaryMin1} : ${binarySec10} ${binarySec1}`;
+	const readout = `${binaryHr10}|${binaryHr1} : ${binaryMin10}|${binaryMin1} : ${binarySec10}|${binarySec1}`;
 
 	displayVBlip.innerText = readout;
 
