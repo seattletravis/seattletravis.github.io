@@ -8,13 +8,16 @@
 	</head>
 	<body>
 		<div>
-			<div class="description">
-				Standard Base 10 (Decimal) Digital docked to Base 2 (Binary) Digital!
+			<div class="descriptionTop">
+				Standard Base 10 (Decimal) Digital docked to Base 2 (Binary) Digital.
 			</div>
 			<div id="decimalClock"></div>
 			<div id="binaryClock"></div>
 		</div>
 
+		<div class="description">
+			Binary Readout with Hour : Minute : and Seconds.
+		</div>
 		<div id="blipperClock">
 			<div id="blipperHour">
 				<div class="blips" id="blipperH8"></div>
@@ -22,6 +25,7 @@
 				<div class="blips" id="blipperH2"></div>
 				<div class="blips" id="blipperH1"></div>
 			</div>
+			<div class="blipperColon">:</div>
 			<div id="blipperMinute">
 				<div class="blips" id="blipperM32"></div>
 				<div class="blips" id="blipperM16"></div>
@@ -30,6 +34,7 @@
 				<div class="blips" id="blipperM2"></div>
 				<div class="blips" id="blipperM1"></div>
 			</div>
+			<div class="blipperColon">:</div>
 			<div id="blipperSecond">
 				<div class="blips" id="blipperS32"></div>
 				<div class="blips" id="blipperS16"></div>
@@ -39,10 +44,18 @@
 				<div class="blips" id="blipperS1"></div>
 			</div>
 		</div>
+
+		<div class="description">
+			Binary Clock in 1's and 0's that reads the 1st and 2nd decimal places for
+			Hours : Minutes : Seconds. (Hour 10_1 : Minutes 10_1, : Second 10_1)
+		</div>
 		<div id="ioBinaryClock">
 			<div id="displayVBlip"></div>
 		</div>
 
+		<div class="description">
+			Standard Base 10 (Decimal) Digital docked to Base 2 (Binary) Digital!
+		</div>
 		<div id="vBlipClock">
 			<div class="vBlipContainers" id="vBlipHr10">
 				<div class="" id="vBlipHr10_1"></div>

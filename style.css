@@ -2,8 +2,16 @@ body {
 	background-color: rgb(233, 238, 244);
 }
 
+.descriptionTop {
+	font-family: monospace;
+	font-size: 10px;
+	margin: 0px 0px 10px 0px;
+}
+
 .description {
-	font-size: 20px;
+	font-family: monospace;
+	font-size: 10px;
+	margin: 50px 0px 10px 0px;
 }
 
 #decimalClock {
@@ -22,25 +30,22 @@ body {
 	border: brown solid 4px;
 	border-radius: 0px 40px 30px 40px;
 	background-color: black;
-
 	font-family: 'Courier New', Courier, monospace;
 	text-align: center;
 	color: green;
 	font-size: 25px;
-
 	width: 350px;
 }
 
 #blipperClock {
 	background-color: grey;
-	margin-top: 72px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
+	gap: 10px;
 	width: 350px;
-	border: solid 5px darkgrey;
-	border-radius: 70px;
+	border: solid 5px grey;
+	border-radius: 5px;
 }
 
 .blips {
@@ -50,7 +55,7 @@ body {
 	font-size: 14px;
 	width: 10px;
 	height: 100px;
-	margin: 0px 1px 0px 1px;
+	margin: 0px 4px 0px 4px;
 }
 
 .blipperOn {
@@ -59,6 +64,10 @@ body {
 
 .blipperOff {
 	background-color: lightblue;
+}
+
+.blipperColon {
+	font-size: 30px;
 }
 
 #blipperHour {
@@ -74,7 +83,6 @@ body {
 }
 
 #ioBinaryClock {
-	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -93,8 +101,6 @@ body {
 }
 
 #vBlipClock {
-	/* margin-left: 40vw; */
-	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: baseline;
