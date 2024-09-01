@@ -10,7 +10,9 @@
 }
 
 .blipCircleContainers {
-	position: relative;
+	display: flex;
+	justify-content: center;
+	align-self: center;
 }
 
 .blipCircleSeperator {
@@ -20,7 +22,7 @@
 	margin: 5px;
 }
 
-.vCircleBlips {
+/* .vCircleBlips {
 	border: rgb(155, 40, 44) solid 4px;
 	border-radius: 30px 30px 30px 30px;
 	color: rgb(222, 213, 213);
@@ -29,7 +31,7 @@
 	width: 1px;
 	height: 26px;
 	margin: 5px 5px 4px 3px;
-}
+} */
 
 .blipCircleOn {
 	background-color: darkblue;
@@ -46,7 +48,7 @@
 	color: rgb(222, 213, 213);
 	text-align: center;
 	font-size: 14px;
-	width: 10px;
-	height: 100px;
-	margin: 0px 4px 0px 4px;
+	width: 4px;
+	height: 150px;
+	margin: 0px 1px 0px 1px;
 }
