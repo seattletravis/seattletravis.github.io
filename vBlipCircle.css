@@ -1,0 +1,42 @@
+#blipCircleClock {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	border: solid blue 10px;
+	border-radius: 50%;
+	width: 165px;
+	height: 165px;
+	background-color: grey;
+}
+
+.blipCircleContainers {
+	position: relative;
+}
+
+.blipCircleSeperator {
+	align-self: center;
+	font-size: 50px;
+	color: black;
+	margin: 5px;
+}
+
+.vCircleBlips {
+	border: rgb(155, 40, 44) solid 4px;
+	border-radius: 30px 30px 30px 30px;
+	color: rgb(222, 213, 213);
+	text-align: center;
+	font-size: 14px;
+	width: 1px;
+	height: 26px;
+	margin: 5px 5px 4px 3px;
+}
+
+.vCircleBlipOn {
+	background-color: darkblue;
+	border-color: darkblue;
+}
+
+.vCircleBlipOff {
+	background-color: lightblue;
+	border-color: lightblue;
+}

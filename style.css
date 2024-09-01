@@ -4,13 +4,13 @@ body {
 
 .descriptionTop {
 	font-family: monospace;
-	font-size: 10px;
+	font-size: 12px;
 	margin: 0px 0px 10px 0px;
 }
 
 .description {
 	font-family: monospace;
-	font-size: 10px;
+	font-size: 12px;
 	margin: 50px 0px 10px 0px;
 }
 
@@ -106,14 +106,13 @@ body {
 	align-items: baseline;
 	border: solid blue 10px;
 	border-radius: 40px;
-	width: 350px;
-	height: 350px;
+	width: 165px;
+	height: 165px;
 	background-color: grey;
 }
 
 .vBlipContainers {
 	position: relative;
-	/* margin: 5px; */
 }
 
 .vBlipSeperator {
@@ -129,9 +128,9 @@ body {
 	color: rgb(222, 213, 213);
 	text-align: center;
 	font-size: 14px;
-	width: 7px;
-	height: 72px;
-	margin: 5px 10px 5px 10px;
+	width: 1px;
+	height: 26px;
+	margin: 5px 5px 4px 3px;
 }
 
 .vBlipOn {
