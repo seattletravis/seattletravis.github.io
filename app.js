@@ -1,3 +1,7 @@
+// import { binaryClockData } from './BinaryModule';
+
+// binaryClockData();
+
 const decimalClock = document.getElementById('decimalClock');
 const binaryClock = document.getElementById('binaryClock');
 const blipperClock = document.getElementById('blipperClock');
