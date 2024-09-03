@@ -1,6 +1,5 @@
-// import { binaryClockData } from './BinaryModule';
-
-// binaryClockData();
+import { binaryClockData } from './BinaryModule.js';
+binaryClockData();
 
 const decimalClock = document.getElementById('decimalClock');
 const binaryClock = document.getElementById('binaryClock');
