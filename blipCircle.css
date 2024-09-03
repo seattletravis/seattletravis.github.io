@@ -42,3 +42,9 @@
 
 	margin: 0px 1px 0px 1px;
 }
+#bezel {
+	border: red solid 5px;
+	height: 165px;
+	width: 165px;
+	border-radius: 50%;
+}
