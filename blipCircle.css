@@ -19,7 +19,7 @@
 	align-self: center;
 	font-size: 50px;
 	color: black;
-	margin: 5px;
+	margin: 4px;
 }
 
 .blipCircleOn {
@@ -43,10 +43,10 @@
 	margin: 0px 1px 0px 1px;
 }
 #blipCircleClockContainer {
-	width: 175px;
-	height: 175px;
+	width: 155px;
+	height: 155px;
 	position: relative;
-	border: solid 3px orange;
+	/* border: solid 3px orange; */
 }
 
 #bezel,
@@ -55,5 +55,13 @@
 	height: 125px;
 	width: 125px;
 	border-radius: 50%;
+	position: absolute;
+}
+
+#outerBezel {
+	border: green solid 17px;
+	height: 121px;
+	width: 121px;
+	border-radius: 25%;
 	position: absolute;
 }
