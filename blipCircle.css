@@ -42,10 +42,18 @@
 
 	margin: 0px 1px 0px 1px;
 }
-#bezel {
-	border: red solid 5px;
-	height: 165px;
-	width: 165px;
+#blipCircleClockContainer {
+	width: 175px;
+	height: 175px;
+	position: relative;
+	border: solid 3px orange;
+}
+
+#bezel,
+#blipCircleClock {
+	border: green solid 15px;
+	height: 125px;
+	width: 125px;
 	border-radius: 50%;
 	position: absolute;
 }
