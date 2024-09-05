@@ -1,8 +1,10 @@
 import { binaryClockData, testClass } from './BinaryModule.js';
 binaryClockData();
 
+// test import of class from BinaryModule.js
 const nowNow = new Date();
 console.log(new testClass(nowNow));
+// end test
 
 const decimalClock = document.getElementById('decimalClock');
 const binaryClock = document.getElementById('binaryClock');
