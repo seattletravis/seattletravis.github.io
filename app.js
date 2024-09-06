@@ -3,7 +3,9 @@ binaryClockData();
 
 // test import of class from BinaryModule.js
 const nowNow = new Date();
-console.log(new testClass(nowNow));
+let testNow = new testClass(nowNow);
+console.log(testNow.second);
+console.log(new testClass(nowNow).second);
 // end test
 
 const decimalClock = document.getElementById('decimalClock');
