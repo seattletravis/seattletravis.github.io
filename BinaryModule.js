@@ -7,11 +7,24 @@ export class testClass {
 		let seconds11InBinary = nowNow.getSeconds().toString(2).padStart(6, '0');
 		let minutes11InBinary = nowNow.getMinutes().toString(2).padStart(6, '0');
 		let hours11InBinary = nowNow.getHours().toString(2).padStart(6, '0');
-		let seconds01InBinary = nowNow.getSeconds() % 10;
-		let seconds10InBinary = Math.floor(nowNow.getSeconds() / 10);
+		let seconds01InBinary = (nowNow.getSeconds() % 10)
+			.toString(2)
+			.padStart(4, '0');
+		let seconds10InBinary = Math.floor(nowNow.getSeconds() / 10)
+			.toString(2)
+			.padStart(4, '0');
 
 		this.sec10 = seconds10InBinary;
+		this.sec10_08 = false;
+		this.sec10_04 = seconds10InBinary.charAt(1) == '1' ? true : false;
+		this.sec10_02 = seconds10InBinary.charAt(2) == '1' ? true : false;
+		this.sec10_01 = seconds10InBinary.charAt(3) == '1' ? true : false;
+
 		this.sec01 = seconds01InBinary;
+		this.sec01_08 = seconds01InBinary.charAt(0) == '1' ? true : false;
+		this.sec01_04 = seconds01InBinary.charAt(1) == '1' ? true : false;
+		this.sec01_02 = seconds01InBinary.charAt(2) == '1' ? true : false;
+		this.sec01_01 = seconds01InBinary.charAt(3) == '1' ? true : false;
 
 		this.sec11 = seconds11InBinary;
 		this.sec11_32 = seconds11InBinary.charAt(0) == '1' ? true : false;

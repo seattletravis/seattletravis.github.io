@@ -5,15 +5,17 @@ binaryClockData();
 const nowNow = new Date();
 const nowContainer = new testClass(nowNow);
 console.log(nowContainer.sec10);
+console.log(nowContainer.sec10_08);
+console.log(nowContainer.sec10_04);
+console.log(nowContainer.sec10_02);
+console.log(nowContainer.sec10_01);
+
 console.log(nowContainer.sec01);
 
-// console.log(nowContainer.sec11);
-// console.log(nowContainer.sec11_32);
-// console.log(nowContainer.sec11_16);
-// console.log(nowContainer.sec11_08);
-// console.log(nowContainer.sec11_04);
-// console.log(nowContainer.sec11_02);
-// console.log(nowContainer.sec11_01);
+console.log(nowContainer.sec01_08);
+console.log(nowContainer.sec01_04);
+console.log(nowContainer.sec01_02);
+console.log(nowContainer.sec01_01);
 
 // end test
 
