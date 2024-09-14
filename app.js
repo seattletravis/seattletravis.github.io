@@ -1,21 +1,33 @@
-import { binaryClockData, testClass } from './BinaryModule.js';
-binaryClockData();
+import { testClass } from './BinaryModule.js';
 
 // test import of class from BinaryModule.js
 const nowNow = new Date();
-const nowContainer = new testClass(nowNow);
-console.log(nowContainer.sec10);
-console.log(nowContainer.sec10_08);
-console.log(nowContainer.sec10_04);
-console.log(nowContainer.sec10_02);
-console.log(nowContainer.sec10_01);
+const now = new testClass(nowNow);
+console.log(now.hr11);
+console.log('Split Hour Hands ' + now.hr10 + ' ' + now.hr01);
+console.log(
+	now.hr10_08 + ' ' + now.hr10_04 + ' ' + now.hr10_02 + ' ' + now.hr10_01
+);
+console.log(
+	now.hr01_08 + ' ' + now.hr01_04 + ' ' + now.hr01_02 + ' ' + now.hr01_01
+);
+console.log('Split Minute Hands ' + now.min10 + ' ' + now.min01);
+console.log(
+	now.min10_08 + ' ' + now.min10_04 + ' ' + now.min10_02 + ' ' + now.min10_01
+);
+console.log(
+	now.min01_08 + ' ' + now.min01_04 + ' ' + now.min01_02 + ' ' + now.min01_01
+);
 
-console.log(nowContainer.sec01);
+console.log('Split Second Hands ' + now.sec10 + ' ' + now.sec01);
+console.log(
+	now.sec10_08 + ' ' + now.sec10_04 + ' ' + now.sec10_02 + ' ' + now.sec10_01
+);
+console.log(
+	now.sec01_08 + ' ' + now.sec01_04 + ' ' + now.sec01_02 + ' ' + now.sec01_01
+);
 
-console.log(nowContainer.sec01_08);
-console.log(nowContainer.sec01_04);
-console.log(nowContainer.sec01_02);
-console.log(nowContainer.sec01_01);
+console.log("It's telling time, it's really really telling time!!!");
 
 // end test
 
