@@ -1,7 +1,10 @@
 import { timeInBinary } from './TimeInBinary.js';
 
-const tib1 = new timeInBinary();
+function updateTib1() {
+	const tib1 = new timeInBinary();
+	console.log(tib1.hrsInDec + ' : ' + tib1.minInDec + ' : ' + tib1.secInDec);
 
-console.log(tib1.hrs11);
+	setTimeout(updateTib1, 1000);
+}
 
-console.log(tib1.hrsInDec + ' : ' + tib1.minInDec + ' : ' + tib1.secInDec);
+updateTib1();
