@@ -1,9 +1,8 @@
-export function binaryClockData() {
-	console.log("Here's your object with all the stuff you need in it!!!");
-}
-
 export class testClass {
-	constructor(nowNow) {
+	constructor(hourMode = '12') {
+		const nowNow = new Date();
+		if ((hourMode = '12')) {
+		}
 		let seconds11InBinary = nowNow.getSeconds().toString(2).padStart(6, '0');
 		let minutes11InBinary = nowNow.getMinutes().toString(2).padStart(6, '0');
 		let hours11InBinary = nowNow.getHours().toString(2).padStart(6, '0');

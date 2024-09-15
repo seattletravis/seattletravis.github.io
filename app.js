@@ -1,8 +1,8 @@
 import { testClass } from './BinaryModule.js';
 
 // test import of class from BinaryModule.js
-const nowNow = new Date();
-const now = new testClass(nowNow);
+// const nowNow = new Date();
+const now = new testClass();
 console.log(now.hr11);
 console.log('Split Hour Hands ' + now.hr10 + ' ' + now.hr01);
 console.log(
