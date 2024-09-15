@@ -4,7 +4,14 @@ import { testClass } from './BinaryModule.js';
 // const nowNow = new Date();
 const now = new testClass();
 console.log(now.hrs11);
-console.log('Split Hour Hands: ' + now.hrs10 + ' | ' + now.hrs01);
+console.log(
+	'Split Hour Hands: ' +
+		now.hrs10 +
+		' | ' +
+		now.hrs01 +
+		', Decimal: ' +
+		now.hrsInDec
+);
 console.log(
 	now.hrs10_08 +
 		' | ' +
@@ -23,7 +30,15 @@ console.log(
 		' | ' +
 		now.hrs01_01
 );
-console.log('Split Minute Hands: ' + now.min10 + ' | ' + now.min01);
+console.log(now.min11);
+console.log(
+	'Split Minute Hands: ' +
+		now.min10 +
+		' | ' +
+		now.min01 +
+		', Decimal: ' +
+		now.minInDec
+);
 console.log(
 	now.min10_08 +
 		' | ' +
@@ -42,8 +57,15 @@ console.log(
 		' | ' +
 		now.min01_01
 );
-
-console.log('Split Second Hands: ' + now.sec10 + ' | ' + now.sec01);
+console.log(now.sec11);
+console.log(
+	'Split Second Hands: ' +
+		now.sec10 +
+		' | ' +
+		now.sec01 +
+		', Decimal: ' +
+		now.secInDec
+);
 console.log(
 	now.sec10_08 +
 		' | ' +

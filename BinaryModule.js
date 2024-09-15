@@ -1,22 +1,29 @@
 export class testClass {
 	constructor(hourMode = '12') {
 		const nowNow = new Date();
-		if ((hourMode = '12')) {
-		}
-		let sec11InBin = nowNow.getSeconds().toString(2).padStart(6, '0');
-		let min11InBin = nowNow.getMinutes().toString(2).padStart(6, '0');
-		let hrs11InBin = nowNow.getHours().toString(2).padStart(6, '0');
-		let sec01InBin = (nowNow.getSeconds() % 10).toString(2).padStart(4, '0');
-		let sec10InBin = Math.floor(nowNow.getSeconds() / 10)
+		let secInDec = nowNow.getSeconds();
+		let minInDec = nowNow.getMinutes();
+		let hrsInDec = nowNow.getHours();
+		// Convert hour is using 12 hour mode, any other value for hourMode with switch to 24 hour mode
+		hrsInDec = hourMode == '12' && hrsInDec > 12 ? hrsInDec - 12 : hrsInDec;
+		this.secInDec = secInDec;
+		this.minInDec = minInDec;
+		this.hrsInDec = hrsInDec;
+
+		let sec11InBin = secInDec.toString(2).padStart(6, '0');
+		let min11InBin = minInDec.toString(2).padStart(6, '0');
+		let hrs11InBin = hrsInDec.toString(2).padStart(6, '0');
+		let sec01InBin = (secInDec % 10).toString(2).padStart(4, '0');
+		let sec10InBin = Math.floor(secInDec / 10)
 			.toString(2)
 			.padStart(4, '0');
 
-		let min01InBin = (nowNow.getMinutes() % 10).toString(2).padStart(4, '0');
-		let min10InBin = Math.floor(nowNow.getMinutes() / 10)
+		let min01InBin = (minInDec % 10).toString(2).padStart(4, '0');
+		let min10InBin = Math.floor(minInDec / 10)
 			.toString(2)
 			.padStart(4, '0');
-		let hrs01InBin = (nowNow.getHours() % 10).toString(2).padStart(4, '0');
-		let hrs10InBin = Math.floor(nowNow.getHours() / 10)
+		let hrs01InBin = (hrsInDec % 10).toString(2).padStart(4, '0');
+		let hrs10InBin = Math.floor(hrsInDec / 10)
 			.toString(2)
 			.padStart(4, '0');
 
