@@ -1,4 +1,4 @@
-export class testClass {
+export class timeInBinary {
 	constructor(hourMode = '12') {
 		const nowNow = new Date();
 		let secInDec = nowNow.getSeconds();
