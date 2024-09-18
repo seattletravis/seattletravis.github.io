@@ -4,8 +4,11 @@ export class timeInBinary {
 		let secInDec = nowNow.getSeconds();
 		let minInDec = nowNow.getMinutes();
 		let hrsInDec = nowNow.getHours();
+		let isAM = undefined;
 		// Convert hour is using 12 hour mode, any other value for hourMode with switch to 24 hour mode
+		isAM = hourMode == '12' && hrsInDec < 13 ? true : false;
 		hrsInDec = hourMode == '12' && hrsInDec > 12 ? hrsInDec - 12 : hrsInDec;
+
 		this.secInDec = secInDec;
 		this.minInDec = minInDec;
 		this.hrsInDec = hrsInDec;

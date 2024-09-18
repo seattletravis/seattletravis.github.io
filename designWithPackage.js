@@ -1,4 +1,5 @@
 import { timeInBinary } from './TimeInBinary.js';
+
 const tib1TimeInBase10 = document.getElementById('tib1TimeInBase10');
 
 const elements = [
@@ -33,7 +34,13 @@ const elements = [
 function updateTib1() {
 	const tib1 = new timeInBinary();
 	tib1TimeInBase10.innerHTML =
-		tib1.hrsInDec + ' : ' + tib1.minInDec + ' : ' + tib1.secInDec;
+		tib1.hrsInDec +
+		' : ' +
+		tib1.minInDec +
+		' : ' +
+		tib1.secInDec +
+		' ' +
+		tib1.isAM;
 	setTimeout(updateTib1, 1000);
 }
 
