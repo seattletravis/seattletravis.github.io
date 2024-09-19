@@ -1,15 +1,23 @@
 export class timeInBinary {
-	constructor(hourMode = '12') {
+	constructor(hrsMode = '12') {
 		const nowNow = new Date();
 		let secInDec = nowNow.getSeconds();
 		let minInDec = nowNow.getMinutes();
 		let hrsInDec = nowNow.getHours();
-		let isAM = '24 Hour Mode';
+		let isAM = false;
+		let hourMode = 'PM';
 		// Convert hour is using 12 hour mode, any other value for hourMode with switch to 24 hour mode
-		isAM = hrsInDec < 13 ? 'AM' : 'PM';
-		hrsInDec = hourMode == '12' && hrsInDec > 12 ? hrsInDec - 12 : hrsInDec;
+		hourMode = hourMode == '12' ? '12' : '24';
+		if (hrsMode == '12' && hrsInDec < 13) {
+			isAM = true;
+			hourMode = 'AM';
+		} else {
+			hrsInDec -= 12;
+			isAM = false;
+		}
 
 		this.isAM = isAM;
+		this.hourMode = hourMode;
 		this.secInDec = secInDec;
 		this.minInDec = minInDec;
 		this.hrsInDec = hrsInDec;

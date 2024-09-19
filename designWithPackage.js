@@ -40,6 +40,8 @@ function updateTib1() {
 		' : ' +
 		tib1.secInDec +
 		' ' +
+		tib1.hourMode +
+		' ' +
 		tib1.isAM;
 	setTimeout(updateTib1, 1000);
 }
