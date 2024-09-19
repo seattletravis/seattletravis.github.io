@@ -8,13 +8,23 @@ export class timeInBinary {
 		let hourMode = 'PM';
 		// Convert hour is using 12 hour mode, any other value for hourMode with switch to 24 hour mode
 		hourMode = hourMode == '12' ? '12' : '24';
-		if (hrsMode == '12' && hrsInDec < 13) {
-			isAM = true;
-			hourMode = 'AM';
-		} else {
-			hrsInDec -= 12;
-			isAM = false;
+		if (hrsMode == '12') {
+			if (hrsInDec < 13) {
+				isAM = true;
+				hourMode = 'AM';
+			} else {
+				hrsInDec -= 12;
+			}
 		}
+
+		// if (hrsMode == '12' && hrsInDec < 13) {
+		// 	isAM = true;
+		// 	hourMode = 'AM';
+		// } else {
+		// 	hrsInDec -= 12;
+		// 	isAM = false;
+		// 	hourMode = 'PM';
+		// }
 
 		this.isAM = isAM;
 		this.hourMode = hourMode;
