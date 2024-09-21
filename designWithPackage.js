@@ -42,7 +42,10 @@ function updateTib1() {
 		' ' +
 		tib1.hourMode +
 		' ' +
-		tib1.isAM;
+		tib1.isAM +
+		' ' +
+		tib1.one;
+
 	setTimeout(updateTib1, 1000);
 }
 

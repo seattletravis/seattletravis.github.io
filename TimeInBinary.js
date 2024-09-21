@@ -17,15 +17,6 @@ export class timeInBinary {
 			}
 		}
 
-		// if (hrsMode == '12' && hrsInDec < 13) {
-		// 	isAM = true;
-		// 	hourMode = 'AM';
-		// } else {
-		// 	hrsInDec -= 12;
-		// 	isAM = false;
-		// 	hourMode = 'PM';
-		// }
-
 		this.isAM = isAM;
 		this.hourMode = hourMode;
 		this.secInDec = secInDec;
@@ -115,5 +106,8 @@ export class timeInBinary {
 		this.hrs11_04 = hrs11InBin.charAt(3) == '1' ? true : false;
 		this.hrs11_02 = hrs11InBin.charAt(4) == '1' ? true : false;
 		this.hrs11_01 = hrs11InBin.charAt(5) == '1' ? true : false;
+
+		//present the binaries for 1 to 12
+		this.one = (1).toString(2).padStart(4, '0');
 	}
 }
