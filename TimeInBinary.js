@@ -108,6 +108,24 @@ export class timeInBinary {
 		this.hrs11_01 = hrs11InBin.charAt(5) == '1' ? true : false;
 
 		//present the binaries for 1 to 12
+		const oneThroughTwelve = [
+			'one',
+			'two',
+			'three',
+			'four',
+			'five',
+			'six',
+			'seven',
+			'eight',
+			'nine',
+			'ten',
+			'eleven',
+			'twelve',
+		];
+		for (i = 0; i < oneThroughTwelve.length; i++) {}
+
 		this.one = (1).toString(2).padStart(4, '0');
+		this.two = (2).toString(2).padStart(4, '0');
+		this.three = (3).toString(2).padStart(4, '0');
 	}
 }
