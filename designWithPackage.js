@@ -44,7 +44,7 @@ function updateTib1() {
 		' ' +
 		tib1.isAM +
 		' ' +
-		tib1.ten;
+		tib1.two;
 
 	setTimeout(updateTib1, 1000);
 }
